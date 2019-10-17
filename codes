@@ -1,1 +1,74 @@
+1).print("Hello World!")
 
+
+
+2).string = input("Введіть слово: ")
+stringRev = string[::-1]
+print("Переворот:", *reversed(stringRev.split()), "\n")
+
+
+
+3).message = input("Insert: ")
+for i in message:
+    print(i*2, end='')
+  
+  
+  
+4).print("Calculator")
+print("1.+")
+print("2.-")
+print("3.*")
+print("4./")
+print("5.**")
+print("6.sin")
+print("7.cos")
+print("8.tan")
+import math
+
+result = int(input("Enter a choice(1-8): "))
+
+if result == 1:
+    a = int(input("Enter a number A:"))
+    b = int(input("Enter a number B:"))
+    c = a+b
+    print("res=",c)
+elif result == 2:
+    a = int(input("Enter a number A:"))
+    b = int(input("Enter a number B:"))
+    c = a-b
+    print("res=", c)
+elif result == 3:
+    a = int(input("Enter a number A:"))
+    b = int(input("Enter a number A:"))
+    c = a*b
+    print("res=", c)
+elif result == 4:
+    a = int(input("Enter a number A:"))
+    b = int(input("Enter a number B:"))
+    c = a/b
+    print("res=", c)
+elif result == 5:
+    a = int(input("Enter a number A:"))
+    b = int(input("Enter a number B:"))
+    c = a**b 
+    print("res=", c)
+elif result == 6:
+    a = int(input("Enter a number:"))
+    c = math.sin(a)
+    print("res=", c)
+elif result == 7:
+    a = int(input("Enter a number:"))
+    c = math.cos(a)
+    print("res=", c)
+elif result == 8:
+    a = int(input("Enter a number:"))
+    c = math.tan(a)
+    print("res=", c)
+else:
+    print("No res")
+    
+    
+    
+ 
+
+  
