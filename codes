@@ -69,6 +69,15 @@ else:
     
     
     
- 
-
-  
+5)vocabulary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+message = input("Enter your message: ")
+key = int(input("Enter your ecnryption key: "))
+encrypted = ""
+for letter in message:
+    position = vocabulary.find(letter)
+    newPos = position + key
+    if letter in vocabulary:
+        encrypted = encrypted + vocabulary[newPos]
+    else:
+        encrypted = encrypted + letter
+print("Your encrypted message is: ", encrypted, "\n")
